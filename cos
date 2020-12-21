@@ -1,0 +1,6 @@
+Keep classes small
+So far you’ve created a few classes. After generating getter/setter pairs for even the small number (by the standards of a real-world Java class) of attributes, the Person class has 150 lines of code. At that size, Person is a small class. It’s not uncommon (and it’s unfortunate) to see classes with 50 or 100 methods and a thousand lines or more of source. Some classes might be that large out of necessity, but most likely they need to be refactored. Refactoring is changing the design of existing code without changing its results. I recommend that you follow this best practice.
+
+In general, a class represents a conceptual entity in your application, and a class’s size should reflect only the functionality to do whatever that entity needs to do. Keep your classes tightly focused to do a small number of things and do them well.
+
+Keep only the methods that you need. If you need several helper methods that do essentially the same thing but take different parameters (such as the printAudit() method), that’s a fine choice. But be sure to limit the list of methods to what you need, and no more.
